@@ -1,5 +1,5 @@
 
-/*_________________________________________________________________________NAV______________________________________________________________________________*/
+/*_________________________________________________________________________NAV_________________________________________________________________________________*/
 var nav=document.getElementById("nav");
 var home=document.createElement("i");
 home.classList.add("fa","fa-home", "home");
@@ -40,12 +40,12 @@ var area = document.getElementById("comment");
 var tweetButton=document.getElementById("btn");
 var message = document.getElementById("message");
 var maxLength=140; //máximo de caracteres permitidos en twitter.
-var checkLength = function() {  /*muy orgullosa de mi función ya que la original es solo una linea , me inspire en esa para transformalo en
- un if-else que cumpliera con los requerimientos*/
+var checkLength = function() {  /*Esta función es para deshabilitar el boton twittear , tambien sirve para contar regresivamente los caracteres
+    que se escriben en el textarea, cambia de color el contador segun los caracteres */
     if(area.value.length===0 || area.value.length>140){
         tweetButton.disabled=true; /*el boton de twittear se desactiva si no hay caracteres o si los caractereres son más de 140*/
-        message.innerHTML=(maxLength-area.value.length);
-        message.style.color="red";
+        message.innerHTML=(maxLength-area.value.length); /*dando contenido al contador , el máximo de caracteres(140) menos los caracteres actuales.*/
+        message.style.color="red";/*dando estilo al contador segun los caracteres.*/
     }                                 
 	else if(area.value.length>=0 && area.value.length<=120){
 		message.innerHTML=(maxLength-area.value.length);
@@ -68,7 +68,13 @@ var checkLength = function() {  /*muy orgullosa de mi función ya que la origina
 setInterval(checkLength, 300); /*Uso el setInterval para que el contador se actualize cada 300 milisegundos*/
 
 
-function add(){
+
+
+
+
+/*______________________________________________________________________________FUNCIÓN COMENTARIOS__________________________________________________________*/
+
+function add(){ /**/
     var tweetButton=document.getElementById("btn");
 	var comment= document.getElementById("comment").value;
 
@@ -80,9 +86,9 @@ function add(){
     	check.classList.add("check");
     	check.type = "checkbox";
     	var paragraph = document.createElement("p");
-    	var photo= document.createElement("img");
-    	photo.setAttribute("src", "asset/img/donald.jpg");
-   	 	var nameSpan = document.createElement("span");
+    	var photo= document.createElement("img"); /*agregando la foto del usuario*/
+    	photo.setAttribute("src", "asset/img/donald.jpg");/*dando la ruta a la imagen del usuario*/
+   	 	var nameSpan = document.createElement("span"); 
     	var dateSpan = document.createElement("span");
     	nameSpan.classList.add("username");
     	dateSpan.classList.add("userdate");
@@ -106,21 +112,21 @@ function add(){
     	newComments.appendChild(heart);
     	newComments.appendChild(paragraph);
     	cont.appendChild(newComments);
-    	nameSpan.textContent = "Donald Trump  ";
-    	dateSpan.textContent = new Date();
+    	nameSpan.textContent = "@Donald_Trump   ";
+    	dateSpan.textContent = new Date(); /*fecha del comentario*/
 
-    	check.addEventListener("click" , function(){
+    	check.addEventListener("click" , function(){ //se tacha el comentario al hacer click en el check
     	    paragraph.classList.toggle("strike-out");
 
     	})
 
-		trash.addEventListener('click', function(){
+		trash.addEventListener('click', function(){ //se elimina el comentario al hacer click en el basurero
     	   cont.removeChild(newComments);
  		})
-		heart.addEventListener("click", function(){
+		heart.addEventListener("click", function(){// el corazón se pone rojo al dar like
     	   heart.classList.toggle("red");
 		})
-		cont.insertBefore(newComments, cont.children[0]);
+		cont.insertBefore(newComments, cont.children[0]); // el último comentario escrito se posiciona primero en la linea de tiempo.
 
 }
 

@@ -9,13 +9,12 @@ body{
 
 }
 
-.tweetbutton[disabled]{
+.tweetbutton[disabled]{  /* dando estilo al botón twittear cuando este cumple las condiciones para ser deshabilitado */
 	cursor: not-allowed;
     pointer-events: none;
     color: #c0c0c0;
     background-color: #ffffff;
 }
-
 
 
 a{
@@ -42,12 +41,6 @@ header{
 }
 
 
-i.fa.fa-twitter.bird{
-	text-align: center;
-	color: #1da1f2;
-	margin-left:17em;
-	
-}
 input{
 	border: 1px solid #96a3ad;
 	border-radius: 1.5em;
@@ -55,7 +48,6 @@ input{
 	width: 14em;
 	margin-left: 45em;
 	
-
 }
 
 .container{
@@ -93,7 +85,7 @@ button{
 	margin-bottom: 2em;
 	outline: 0.1em solid #E5E3F2;
 	background: #F5F8FA;
-	word-break:break-word;
+	word-break:break-word; /* para que si el parrafo tiene una palabra muy larga se corte y no sobrepase el div contenedor. */
 	border-radius: 1.5em;
 }
 
@@ -137,12 +129,14 @@ img{
 
 .username{
 	font-weight: bolder;
+	color: #00aced;
 
 }
 .userdate{
 	font-size: 0.7em;
 }
-input::-webkit-input-placeholder {
+
+input::-webkit-input-placeholder { /* dando estilo al placeholder en diferentes navegadores */
  	padding-left: 1em;
  	font-family: 'Montserrat', sans-serif;
 }
@@ -154,7 +148,6 @@ input:-ms-input-placeholder {
  	padding-left: 1em; 
 
 }
-
 
 nav{
 	font-size: 1em;
