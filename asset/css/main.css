@@ -5,6 +5,7 @@ body{
 	background: #e6ecf0;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 
 }
 
@@ -23,6 +24,7 @@ a{
 	display: inline-block;
 	margin-top: 1.5em;
 	margin-right: 1em;
+	margin-left: 0.5em;
 
 }
 a:first-child{
@@ -36,35 +38,24 @@ header{
 	width: 100%;
 	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
-}
-.fa{
-	font-size: 1.3em;
-	margin-right: 0.3em;
+	border-bottom: 1px solid #EAEAEA;
 }
 
-.fa-twitter{
+
+i.fa.fa-twitter.bird{
 	text-align: center;
 	color: #1da1f2;
 	margin-left:17em;
-	font-size: 2.5em;
+	
 }
 input{
 	border: 1px solid #96a3ad;
 	border-radius: 1.5em;
 	height: 2em;
 	width: 14em;
-	margin-left: 20em
+	margin-left: 45em;
 	
 
-}
-
-.fa-search{
-	font-weight: normal;
-	position: absolute;
-	left: 71em;
-    top: 1.8em;
-	font-size: 1em;
-	color:#96a3ad;
 }
 
 .container{
@@ -91,7 +82,10 @@ button{
 	font-family: 'Montserrat', sans-serif;
 }
 #cont {
-	margin-left: 1em;
+	width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    height: auto;
 }
 
 #cont div{
@@ -99,6 +93,8 @@ button{
 	margin-bottom: 2em;
 	outline: 0.1em solid #E5E3F2;
 	background: #F5F8FA;
+	word-break:break-word;
+	border-radius: 1.5em;
 }
 
 
@@ -125,9 +121,7 @@ p{
 	font-weight: bolder;
 }
 
-.check{
-	display: block;
-}
+
 span{
 	font-family: 'Montserrat', sans-serif;
 }
@@ -149,14 +143,43 @@ img{
 	font-size: 0.7em;
 }
 input::-webkit-input-placeholder {
- padding-left: 1em;
- font-family: 'Montserrat', sans-serif;
+ 	padding-left: 1em;
+ 	font-family: 'Montserrat', sans-serif;
 }
 input:-moz-placeholder {
- padding-left: 1em;
- font-family: 'Montserrat', sans-serif;
+ 	padding-left: 1em;
+ 	font-family: 'Montserrat', sans-serif;
 }
 input:-ms-input-placeholder { 
- padding-left: 1em; 
+ 	padding-left: 1em; 
 
+}
+
+
+nav{
+	font-size: 1em;
+	color: #657786;
+
+}
+.home{
+	margin-left: 2em;
+
+}
+
+.search{
+	position: relative;
+	left:-2em;
+}
+.bird{
+	width: 3em;
+	height: 2em;
+	border-radius: 0;
+	border:none;
+	position: relative;
+    left: 20%;
+    top: 1em;
+}
+.check{
+	display: block;
+	margin-left: 0;
 }

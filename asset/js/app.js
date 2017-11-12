@@ -1,11 +1,49 @@
 
+/*_________________________________________________________________________NAV______________________________________________________________________________*/
+var nav=document.getElementById("nav");
+var home=document.createElement("i");
+home.classList.add("fa","fa-home", "home");
+nav.appendChild(home);
+var homeText=document.createElement("a");
+homeText.textContent="Inicio";
+nav.appendChild(homeText);
+var bell=document.createElement("i");
+bell.classList.add("fa","fa-bell-o","bell");
+var bellText=document.createElement("a");
+bellText.textContent="Notificaciones";
+nav.appendChild(bell);
+nav.appendChild(bellText);
+var direct=document.createElement("i");
+direct.classList.add("fa","fa-envelope-o", "direct");
+nav.appendChild(direct);
+var directText=document.createElement("a");
+directText.textContent="Mensajes";
+nav.appendChild(directText);
+
+
+var bird=document.createElement("img");
+bird.setAttribute("src","asset/img/bird.png");
+bird.classList.add("bird");
+nav.appendChild(bird);
+
+var input=document.createElement("input");
+var search=document.createElement("i");
+search.classList.add("fa","fa-search", "search");
+nav.appendChild(input);
+nav.appendChild(search);
+input.placeholder="Buscar en twitter";
+
+/*________________________________________________________________CONTADOR REGRESIVO DE CARACTERES_____________________________________________________________*/
+
+
 var area = document.getElementById("comment");
 var tweetButton=document.getElementById("btn");
 var message = document.getElementById("message");
 var maxLength=140; //máximo de caracteres permitidos en twitter.
-var checkLength = function() {  
+var checkLength = function() {  /*muy orgullosa de mi función ya que la original es solo una linea , me inspire en esa para transformalo en
+ un if-else que cumpliera con los requerimientos*/
     if(area.value.length===0 || area.value.length>140){
-        tweetButton.disabled=true;
+        tweetButton.disabled=true; /*el boton de twittear se desactiva si no hay caracteres o si los caractereres son más de 140*/
         message.innerHTML=(maxLength-area.value.length);
         message.style.color="red";
     }                                 
@@ -27,7 +65,7 @@ var checkLength = function() {
 	}
 }
 
-setInterval(checkLength, 300);
+setInterval(checkLength, 300); /*Uso el setInterval para que el contador se actualize cada 300 milisegundos*/
 
 
 function add(){
@@ -76,15 +114,13 @@ function add(){
 
     	})
 
-		 trash.addEventListener('click', function(){
-    	cont.removeChild(newComments);
+		trash.addEventListener('click', function(){
+    	   cont.removeChild(newComments);
  		})
 		heart.addEventListener("click", function(){
-    	heart.classList.toggle("red");
+    	   heart.classList.toggle("red");
 		})
 		cont.insertBefore(newComments, cont.children[0]);
-
-//}
 
 }
 
