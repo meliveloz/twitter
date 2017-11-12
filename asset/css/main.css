@@ -215,6 +215,11 @@ h3{
 
 
 }
+
+h4:hover{
+	color:#118ADF;
+	text-decoration: underline;
+}
 .follow{
 	background: white;
     position: absolute;
@@ -254,4 +259,8 @@ h5{
 	display: block;
 	cursor: pointer;
 	margin-left: 5.5em;
+}
+.followthis:hover{
+	color:white;
+	background: #1da1f2;
 }
