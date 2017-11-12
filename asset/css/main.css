@@ -33,6 +33,7 @@ a:first-child{
 header{
 	height: 4em;
 	position: fixed;
+	z-index: 1000;
 	background: white;
 	width: 100%;
 	font-weight: bold;
@@ -175,4 +176,81 @@ nav{
 .check{
 	display: block;
 	margin-left: 0;
+}
+.trending{
+	background: white;
+    position: absolute;
+    width: 15em;
+    height: 21em;
+    top: 5em;
+    left: 3em;
+}
+h2{
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	margin-left: 1em;
+}
+h6{
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.6em;
+	margin-left: 1em;
+	color:#1da1f2;
+	cursor: pointer;
+}
+h4{
+	font-size: 0.8em;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 0;
+	margin-left: 1em;
+	margin-bottom: -0.5em;
+	cursor: pointer;
+	color:#1da1f2;
+}
+h3{
+	font-size: 0.6em;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 2em;
+
+
+}
+.follow{
+	background: white;
+    position: absolute;
+    width: 15em;
+    height: 21em;
+    top: 5em;
+    left: 65em;
+    text-align: center;
+}
+.kim{
+	width: 3em;
+    height: 3em;
+    margin-left: 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+h5{
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 0;
+	font-size: 0.6em;
+	margin-bottom: 0.5em;
+	cursor: pointer;
+}
+.followthis{
+	margin-top: 0;
+    color: #1da1f2;
+    border: 0.1em solid;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    cursor: pointer;
+    display: block;
+    width: 4em;
+    margin-left: 4.5em
+}
+.pini{
+	display: block;
+	cursor: pointer;
 }

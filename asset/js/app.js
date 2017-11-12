@@ -49,7 +49,7 @@ var checkLength = function() {  /*Esta función es para deshabilitar el boton tw
     }                                 
 	else if(area.value.length>=0 && area.value.length<=120){
 		message.innerHTML=(maxLength-area.value.length);
-        tweetButton.disabled=false;
+        tweetButton.disabled=false; //volviendo a habilitar el boton 
 		message.style.color="blue";
 	} else if(
 		area.value.length>120 && area.value.length<=130
