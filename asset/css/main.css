@@ -1,0 +1,162 @@
+.center{
+	text-align: center;
+}
+body{
+	background: #e6ecf0;
+	margin: 0;
+	padding: 0;
+
+}
+
+.tweetbutton[disabled]{
+	cursor: not-allowed;
+    pointer-events: none;
+    color: #c0c0c0;
+    background-color: #ffffff;
+}
+
+
+
+a{
+	text-decoration: none;
+	color: #657786;
+	display: inline-block;
+	margin-top: 1.5em;
+	margin-right: 1em;
+
+}
+a:first-child{
+	margin-left: 4em;
+}
+
+header{
+	height: 4em;
+	position: fixed;
+	background: white;
+	width: 100%;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+.fa{
+	font-size: 1.3em;
+	margin-right: 0.3em;
+}
+
+.fa-twitter{
+	text-align: center;
+	color: #1da1f2;
+	margin-left:17em;
+	font-size: 2.5em;
+}
+input{
+	border: 1px solid #96a3ad;
+	border-radius: 1.5em;
+	height: 2em;
+	width: 14em;
+	margin-left: 20em
+	
+
+}
+
+.fa-search{
+	font-weight: normal;
+	position: absolute;
+	left: 71em;
+    top: 1.8em;
+	font-size: 1em;
+	color:#96a3ad;
+}
+
+.container{
+	padding-top: 5em;
+    text-align: center;
+  
+}
+textarea{
+	border-radius: 1.5em;
+	border:2px solid #a4d9f9;
+	font-family: 'Montserrat', sans-serif;
+	padding-left: 1em;
+	width: 30em;
+	height: 10em;
+}
+button{
+	border-radius: 1em;
+	display: block;
+	margin-left: 60em;
+	padding: 0.7em;
+	color: white;
+	font-size: bold;
+	background:#1da1f2;
+	font-family: 'Montserrat', sans-serif;
+}
+#cont {
+	margin-left: 1em;
+}
+
+#cont div{
+	padding: 1em 0.5em;
+	margin-bottom: 2em;
+	outline: 0.1em solid #E5E3F2;
+	background: #F5F8FA;
+}
+
+
+.heart, .trash{
+	margin: 1em;
+	float:right;
+}
+.trash:hover{
+	color:#1da1f2;
+	cursor: pointer;
+}
+.strike-out{
+	text-decoration: line-through;
+	color:#1da1f2;
+}
+.red{
+	color: #fc1e26;
+	cursor: pointer;
+}
+p{
+	display: inline-block;
+	margin-left: 0.7em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+}
+
+.check{
+	display: block;
+}
+span{
+	font-family: 'Montserrat', sans-serif;
+}
+img{
+	width: 4em;
+	height: 4em;
+	border-radius: 50%;
+	border:1px solid white;
+}
+.donald{
+	margin-bottom:4.5em;
+}
+
+.username{
+	font-weight: bolder;
+
+}
+.userdate{
+	font-size: 0.7em;
+}
+input::-webkit-input-placeholder {
+ padding-left: 1em;
+ font-family: 'Montserrat', sans-serif;
+}
+input:-moz-placeholder {
+ padding-left: 1em;
+ font-family: 'Montserrat', sans-serif;
+}
+input:-ms-input-placeholder { 
+ padding-left: 1em; 
+
+}
